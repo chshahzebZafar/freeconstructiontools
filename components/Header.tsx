@@ -3,11 +3,11 @@ import { HardHat } from "lucide-react";
 
 const navLinks: Array<{ href: string; label: string }> = [
   { href: "/concrete-calculator", label: "Concrete" },
-  { href: "/lumber-calculator", label: "Lumber" },
   { href: "/roofing-calculator", label: "Roofing" },
   { href: "/flooring-calculator", label: "Flooring" },
-  { href: "/paint-calculator", label: "Paint" },
   { href: "/#calculators", label: "All calculators" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {

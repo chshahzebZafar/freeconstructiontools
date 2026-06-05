@@ -19,5 +19,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [homepage, ...toolPages];
+  const contentPages: MetadataRoute.Sitemap = [
+    { path: "/about", priority: 0.6 },
+    { path: "/contact", priority: 0.6 },
+    { path: "/privacy", priority: 0.3 },
+    { path: "/terms", priority: 0.3 },
+  ].map((p) => ({
+    url: `${baseUrl}${p.path}`,
+    lastModified: CONTENT_REFRESHED,
+    changeFrequency: "yearly" as const,
+    priority: p.priority,
+  }));
+
+  return [homepage, ...toolPages, ...contentPages];
 }

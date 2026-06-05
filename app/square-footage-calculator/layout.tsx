@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { getOGImageUrl } from "@/lib/og-image-generator";
 
 export const metadata: Metadata = {
-  title: "Square Footage Calculator 2026 | Calculate Area in Sq Ft",
+  title: "Square Footage Calculator | Calculate Area in Sq Ft",
   description:
-    "Free square footage calculator. Calculate area for rooms, houses, yards, and irregular shapes. Supports feet, inches, meters, and acres. Perfect for.",
+    "Free square footage calculator. Calculate area for rooms, houses, yards, and irregular shapes. Supports feet, inches, meters, and acres. Perfect for flooring & paint.",
   keywords: [
     "square footage calculator",
     "sq ft calculator",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     title: "Square Footage Calculator | Calculate Area in Sq Ft",
-    description: "Free square footage calculator for rooms, houses, yards, and irregular shapes. Supports feet, inches, meters, and acres. Perfect for flooring, paint, and.",
+    description: "Free square footage calculator for rooms, houses, yards, and irregular shapes. Supports feet, inches, meters, and acres. Perfect for flooring, paint, and real estate.",
     url: "https://freeconstructiontools.com/square-footage-calculator",
     type: "website",
     siteName: "Free Construction Tools",

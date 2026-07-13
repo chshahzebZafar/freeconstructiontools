@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { getOGImageUrl } from "@/lib/og-image-generator";
 
@@ -76,6 +77,9 @@ export const metadata: Metadata = {
     canonical: "https://freeconstructiontools.com",
   },
   metadataBase: new URL("https://freeconstructiontools.com"),
+  verification: {
+    google: "4RT554XDx1hHL6hPwst1U_jMZZVzy-NbaxvnCEblD1M",
+  },
   other: {
     "theme-color": "#09090b",
   },
@@ -99,6 +103,18 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LSG6C0LGYC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LSG6C0LGYC');
+          `}
+        </Script>
       </body>
     </html>
   );

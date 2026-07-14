@@ -18,6 +18,7 @@ import {
   Grid3X3,
   Fence,
   Calculator,
+  Mountain,
 } from "lucide-react";
 
 export interface CategoryTool {
@@ -166,6 +167,17 @@ export const categoryTools: CategoryTool[] = [
       "Free mulch calculator. Calculate cubic yards and bags of mulch needed for any garden bed or landscape area. Supports rectangular, circular, and triangular beds, multiple areas, depth settings, bulk vs. bagged cost comparison, and PDF export.",
     path: "/mulch-calculator",
     icon: Layers,
+    isNew: true,
+  },
+  {
+    slug: "gravel-calculator",
+    category: "construction",
+    name: "Gravel Calculator",
+    tagline: "Cubic yards, tons, and cost for driveways, paths, and landscaping.",
+    description:
+      "Free gravel calculator. Calculate cubic yards, cubic feet, and tons of gravel for driveways, pathways, and landscaping. Supports pea gravel, crushed stone, river rock, decomposed granite, lava rock, and road base. Rectangle, circle, and pathway shapes with waste factor and cost estimate.",
+    path: "/gravel-calculator",
+    icon: Mountain,
     isNew: true,
   },
 ];
